@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK — Portafolio Personal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts: Poppins para títulos, DM Mono para acentos de código -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=DM+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========================================================
+       HEADER: Logo / nombre del sitio + efecto decorativo
+       Mejora futura: agregar modo claro/oscuro
+  ======================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo">MK<span class="logo-dot">.</span></span>
+      <p class="header-tagline">dev · archer · crochet maker</p>
+    </div>
+    <div class="header-deco" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       NAV: Barra de navegación con enlaces principales
+  ======================================================== -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#tarjetas">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#peliculas">Películas</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========================================================
+       MAIN: Contenido principal dividido en sub-secciones
+  ======================================================== -->
+  <main>
+
+    <!-- SUB-SECCIÓN: Presentación personal -->
+    <section id="sobre-mi" class="section section--mk">
+      <div class="mk-text">
+        <p class="mk-label">¡Hola! soy</p>
+        <h1 class="mk-name">MK</h1>
+        <p class="mk-bio">
+          Desarrolladora en formación con una mente curiosa y productiva.
+          Me apasionan los lenguajes de programación, los mundos virtuales y
+          también las cosas hechas a mano: desde código hasta tejido a crochet.
+          Cuando no estoy frente a la pantalla, probablemente esté disparando flechas.
+          La de las fotos es Maze, mi gatita Carey que me contesta cada cosa que pregunto con mucha actitud.
+        </p>
+        <a href="#contacto" class="btn btn--primary">Escribime</a>
+      </div>
+      <div class="maze-img-wrap">
+  <img
+    src="img/maze1.jpg"
+    alt="Mi gatita Maze."
+    class="maze-avatar"
+  />
+  <div class="maze-img-bg" aria-hidden="true"></div>
+</div>
+    </section>
+
+    <!-- ========================================================
+         SUB-SECCIÓN: Tarjetas de proyectos / intereses
+         Mejora futura: conectar con GitHub API para mostrar repos reales
+    ======================================================== -->
+    <section id="tarjetas" class="section section--cards">
+      <h2 class="section-title">Proyectos <span class="title-accent">&amp; Cosas</span></h2>
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=80"
+              alt="Pantalla con código Python en verde sobre fondo oscuro."
+              class="card-img"
+              width="600"
+              height="340"
+            />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Python</span>
+            <h3 class="card-title">Scripts &amp; Automatización</h3>
+            <p class="card-text">Pequeños programas que resuelven problemas cotidianos: desde ordenar archivos hasta procesar datos. Python es mi lenguaje de cabecera.</p>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img
+              src="/img/crochet.jpg"
+              alt="Tejido a crochet con una aguja e hilo."
+              class="card-img"
+              width="600"
+              height="340"
+            />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Hobby</span>
+            <h3 class="card-title">Crochet &amp; Diseño a Mano</h3>
+            <p class="card-text">Tejer a crochet me enseñó que la paciencia y la lógica van de la mano. Cada punto es como una línea de código: si fallás una, el patrón entero cambia.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img
+              src="/img/arqueria.jpg"
+              alt="MK (yo) en un torneo, las flechitas son mi pasión"
+              class="card-img"
+              width="600"
+              height="340"
+            />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Deporte</span>
+            <h3 class="card-title">Arquería</h3>
+            <p class="card-text">Concentración, respiración, precisión. La arquería es todo lo opuesto al caos del código, me apasiona.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SUB-SECCIÓN: Habilidades -->
+    <section id="habilidades" class="section section--skills">
+      <h2 class="section-title">Habilidades <span class="title-accent">&amp; Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skills-block">
+          <h3 class="skills-subtitle">Lo que manejo</h3>
+          <ul class="skills-list">
+            <li><span class="skill-icon">🐍</span> Python</li>
+            <li><span class="skill-icon">♟️</span> C#</li>
+            <li><span class="skill-icon">☕</span> Java (básico)</li>
+            <li><span class="skill-icon">🎮</span> Unity</li>
+          </ul>
+        </div>
+
+        <div class="skills-block">
+          <h3 class="skills-subtitle">Lo que quiero aprender</h3>
+          <ul class="skills-list skills-list--learn">
+            <li><span class="skill-icon">🌐</span> JavaScript avanzado</li>
+            <li><span class="skill-icon">⚛️</span> React</li>
+            <li><span class="skill-icon">🎨</span> Diseño UX/UI</li>
+          </ul>
+        </div>
+
+        <div class="skills-block">
+          <h3 class="skills-subtitle">Mis hobbies</h3>
+          <table class="hobbies-table">
+            <thead>
+              <tr><th>Hobby</th><th>Nivel de obsesión</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>🏹 Arquería</td><td>★★★★★★★</td></tr>
+              <tr><td>🧶 Crochet</td><td>★★★★☆</td></tr>
+              <tr><td>💻 Programar</td><td>★★★★★</td></tr>
+              <tr><td>📚 Leer</td><td>★★★★☆</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SUB-SECCIÓN: Formulario de contacto
+         Mejora futura: Hacer que funcione
+    ======================================================== -->
+    <section id="contacto" class="section section--contact">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-desc">¿Querés charlar sobre un proyecto, colaborar o simplemente saludar? ¡Escribime!</p>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje ✉️</button>
+      </form>
+    </section>
+
+    <!-- ========================================================
+         SUB-SECCIÓN: Películas favoritas
+    ======================================================== -->
+    <section id="peliculas" class="section section--movies">
+      <h2 class="section-title">Mis <span class="title-accent">Pelis</span> Favoritas</h2>
+      <div class="movies-grid">
+
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img
+              src="/img/shrek.jpg"
+              alt="Portada de la primera película de Shrek."
+              class="movie-img"
+              width="500"
+              height="300"
+            />
+            <div class="movie-overlay">
+              <span class="movie-year">2001</span>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Shrek</h3>
+            <p class="movie-desc">Un ogro gruñón, un burro insoportable (lo amamos) y una princesa que no es lo que parece. Shrek enseña que nadie es lo que aparenta a primera vista.</p>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img
+              src="/img/hungergames.jpg"
+              alt="Portada de la primera película de los juegos del hambre."
+              class="movie-img"
+              width="500"
+              height="300"
+            />
+            <div class="movie-overlay">
+              <span class="movie-year">2012</span>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Hunger Games</h3>
+            <p class="movie-desc">Katniss Everdeen con un arco en la mano cambiando el mundo. Esta serie de películas (y libros) hablan de injusticia y de elegir pelear aunque el sistema esté en contra.</p>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img
+              src="/img/kuzco.jpg"
+              alt="Portada de la película El emperador y sus locuras."
+              class="movie-img"
+              width="500"
+              height="300"
+            />
+            <div class="movie-overlay">
+              <span class="movie-year">2000</span>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">El emperador y sus locuras</h3>
+            <p class="movie-desc">Un emperador egocéntrico convertido en llama que aprende (en contra de su voluntad) lo que es la humildad. Tiene el humor más absurdo y genuino de todo Disney, me encanta.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER: Cierre del sitio con redes sociales
+       Mejora futura: añadir botón "volver arriba"
+  ======================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 MK — Hecho con <span class="heart">♥</span> y mucho mate.</p>
+      <nav class="footer-links" aria-label="Redes sociales">
+        <a href="https://github.com/MaiKlaus" aria-label="GitHub de MK">GitHub</a>
+        <a href="https://www.instagram.com/maidubidu" aria-label="Instagram de MK">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
