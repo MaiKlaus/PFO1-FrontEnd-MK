@@ -5,7 +5,10 @@
 Este sitio es el **Trabajo Práctico N°1 (PFO1)** de la materia de Desarrollo Web(Front END). Consiste en una landing page de portafolio personal construida únicamente con **HTML semántico y CSS puro**, sin frameworks ni librerías externas (salvo Google Fonts). El objetivo es presentarme a mi, MK: intereses, habilidades, proyectos y formas de contacto.
 
 **URL publicada en GitHub Pages**
+https://maiklaus.github.io/PFO1-FrontEnd-MK/
 
+**URL de Vercel**
+https://pfo-1-front-end-mk.vercel.app/
 ---
 
 ## Checklist — Práctica Formativa Obligatoria 1
